@@ -4,10 +4,45 @@
     <title>HTML/CSS Lab</title>
     <link rel="stylesheet" href="https://unpkg.com/basscss@8.0.1/css/basscss.min.css">
     <style>
-
+      .muted {
+        color: #999;
+      }
     </style>
   </head>
-  <body>
+  <body class="flex justify-center"> <!-- for all 3 tweets -->
+    <div style="width: 600px" class="mt3"> <!-- width of div and top margin of 3-->
+      <div class="flex border-bottom mb2"> <!-- div for logo AND handle, time, and tweet -->
+        <div> <!-- div for logo -->
+          <img class="mr2" src="https://pbs.twimg.com/profile_images/549628214826389504/FkyI1Uva_bigger.png" alt="boston-dot-com logo">
+        </div>
+          <div class="flex flex-column"> <!-- div for handle, time, and tweet -->
+            <strong>Boston.com</strong>
+            <span class="muted">@BostonDotCom - 9m</span>
+            <p>Why SEC coaches believe the conference ‘might as well be the AFC East’ <a href="https://trib.al/oHCj9bD">https://trib.al/oHCj9bD</a></p>
+          </div>
+      </div>
 
+      <div class="flex border-bottom mb2">
+        <div>
+          <img class="mr2" src="https://pbs.twimg.com/profile_images/1034455576309198848/3yxsqcb7_bigger.jpg" alt="boston globe logo">
+        </div>
+        <div class="flex flex-column">
+          <strong>The Boston Globe</strong>
+          <span class="muted">@BostonGlobe - 11m</span>
+          <p>This Red Sox walkoff win only poses more questions.</p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div>
+          <img class="mr2" src="https://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_bigger.jpg" alt="reuters logo">
+        </div>
+        <div class="flex flex-column">
+          <strong>Reuters Top News</strong>
+          <span class="muted">@Reuters - 13m</span>
+          <p>Proxy fight looms as new investors ramp up pressure on Campbell Soup</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
